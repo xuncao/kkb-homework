@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import myFormCreat from '../components/myFormCreat'
+import myFormCreate from '../components/myFormCreate'
 
 const nameRules = {required: true, message: '请输入用户名'}
 const passwordRules = {required: true, message: '请输入密码'}
 
-@myFormCreat
+@myFormCreate
 class FormPage extends Component {
     render() {
         const { getFieldDecorator } = this.props

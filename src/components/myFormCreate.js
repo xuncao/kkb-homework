@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default function myFormCreat(Cmp) {
+export default function myFormCreate(Cmp) {
   return class extends Component {
     constructor(props) {
       super(props)

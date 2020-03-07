@@ -1,11 +1,11 @@
 import { createStore, applyMiddleware, combineReducers } from '../utils/myRedux'
 
-const countReducer = (count = 0, action) => {
-    switch (action.type) {
+const countReducer = (count = 0, { type, payload }) => {
+    switch (type) {
         case 'ADD':
-            return count + 1
+            return count + payload
         case 'MINUS':
-            return count - 1
+            return count - payload
         default:
             return count
     }

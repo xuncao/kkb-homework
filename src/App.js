@@ -7,7 +7,8 @@ import { Button } from 'antd';
 // import FormPage from './pages/FormPage'
 // import ContextPage from './pages/ContextPage'
 // import ReduxPage from './pages/ReduxPage'
-import CaculatorPage from './pages/CaculatorPage'
+// import CaculatorPage from './pages/CaculatorPage'
+import ReactReduxPage from './pages/ReactReduxPage'
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       {/* <FormPage /> */}
       {/* <ContextPage /> */}
       {/* <ReduxPage /> */}
-      <CaculatorPage />
+      {/* <CaculatorPage /> */}
+      <ReactReduxPage />
     </div>
   );
 }

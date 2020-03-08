@@ -47,7 +47,7 @@ export const connect = (
         }
         
         render() {
-            console.log(this)
+            // console.log(this)
             return <WrappedComponent {...this.state.props} />
         }
     }

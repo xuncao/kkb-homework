@@ -22,9 +22,19 @@ const countTenReducer = (count = 10, action) => {
     }
 }
 
+const loginReducer = (isLogin = false, action) => {
+    switch (action.type) {
+        case 'LOGIN':
+            return true
+        default:
+            return isLogin
+    }
+}
+
 const reducers = combineReducers({
     countReducer,
-    countTenReducer
+    countTenReducer,
+    loginReducer
 })
 
 // const store = createStore(countReducer, applyMiddleware(thunk, logger))

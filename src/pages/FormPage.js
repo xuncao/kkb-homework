@@ -7,6 +7,7 @@ const passwordRules = {required: true, message: '请输入密码'}
 @myFormCreate
 class FormPage extends Component {
     render() {
+        console.log('props', this.props)
         const { getFieldDecorator } = this.props
         return (
             <div>

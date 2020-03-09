@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { Route, Redirect } from 'react-router-dom'
 import { connect } from '../utils/myReactRedux'
 
-// @connect(
-//     state => ({ isLogin: state.loginReducer })
-// )
+@connect(
+    state => ({ isLogin: state.loginReducer })
+)
 class PrivateRoute extends Component {
     constructor(props) {
         super(props)
